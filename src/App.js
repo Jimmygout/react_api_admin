@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { HydraAdmin } from "@api-platform/admin";
 
 function App() {
   return (
     <div className="App">
+      <HydraAdmin entrypoint="https://127.0.0.1:8000/api"></HydraAdmin>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
